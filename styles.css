@@ -1,0 +1,7 @@
+.popupContainer {
+    width: 200px; 
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}

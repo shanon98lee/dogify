@@ -1,0 +1,35 @@
+{
+    "name": "CorgiOverflow", 
+    "description": "Colorize StackOverflow (and add dog images)", 
+    "version": "1.0.0", 
+    "manifest_version": 3,
+    "permissions": ["storage", "webNavigation", "declarativeContent", "tabs"],
+    "content_scripts": [
+        {
+          "matches": [
+            "https://stackoverflow.com/*"
+          ],
+          "css": [
+            "styles.css"
+          ]
+        },
+        {
+          "matches": [
+            "https://stackoverflow.com/*"
+          ],
+          "js": [
+            "main.js"
+          ]
+        }
+      ], 
+    "action": {
+        "default_popup": "popup.html", 
+        "default_icon": {
+            "16": "icon.png",
+            "32": "icon.png",
+            "48": "icon.png",
+            "128": "icon.png"
+          }
+    }, 
+    "options_page": "options.html"
+}
