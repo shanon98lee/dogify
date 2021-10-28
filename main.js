@@ -3,7 +3,6 @@ const upvotedAnswers = Array.from(document.getElementsByClassName('answer'));
 upvotedAnswers.map((node) => node.style.backgroundColor = '#ddffdb');
 
 // Middle answers: -2 to 2
-
 const middleAnswers = Array.from(document.querySelectorAll("div[data-score='-2'], div[data-score='-1'], div[data-score='0'], div[data-score='1'], div[data-score='2']"))
 middleAnswers.map((node) => node.style.backgroundColor = '#f9ffc4');
 
@@ -11,7 +10,6 @@ middleAnswers.map((node) => node.style.backgroundColor = '#f9ffc4');
 const downvotedAnswers = Array.from(document.getElementsByClassName('downvoted-answer'));
 downvotedAnswers.map((node) => { node.style.backgroundColor = '#ffbabc';
 });
-
 
 function dogify() {
     console.log('dogify!')

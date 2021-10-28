@@ -1,0 +1,21 @@
+MIKE
+
+1.  Demo
+  - Add color coding to stack overflow answers, based on the current answer score
+  -- Show corgify popup 
+
+-- Dog.ceo API where we fetched images of random corgis, so we have an almost endless supply of corgi pictures
+-- Maybe in the future, can you can select the dog breed that you want
+
+
+https://stackoverflow.com/questions/114543/how-to-horizontally-center-an-element?page=1&tab=votes#tab-top
+https://dog.ceo/dog-api/
+
+
+1. Communicating from the popup window of our extension, to the main window of stackoverflow   
+    - Solved using message passing and chrome tabs api
+    - bc popup has its own dom, cannot access main window
+
+
+2. Using query selector to select elements with certain html attributes (ex: data-score), 
+    not by id or class like usual
