@@ -25,10 +25,10 @@
     "action": {
         "default_popup": "popup.html", 
         "default_icon": {
-            "16": "icon.png",
-            "32": "icon.png",
-            "48": "icon.png",
-            "128": "icon.png"
+            "16": "dog.png",
+            "32": "dog.png",
+            "48": "dog.png",
+            "128": "dog.png"
           }
     }, 
     "options_page": "options.html"

@@ -10,22 +10,6 @@ middleAnswers.map((node) => node.style.backgroundColor = '#f9ffc4');
 // Downvoted: -3 and below - default: red
 const downvotedAnswers = Array.from(document.getElementsByClassName('downvoted-answer'));
 downvotedAnswers.map((node) => { node.style.backgroundColor = '#ffbabc';
-    // Make get request to dog api! 
-    // fetch('https://dog.ceo/api/breeds/image/random')
-    //     .then((response) => response.json())
-    //     .then((JSONData) => {
-    //         node.style.backgroundColor = '';
-            // node.innerText = '';
-            // node.style.minHeight = 'auto'
-            // let dog = document.createElement('img');
-            // dog.src = `${JSONData.message}`
-            // node.appendChild(dog)
-            
-        //     console.log(JSONData.message)
-        // })
-        // .catch(error => console.log(error))
-        
-    
 });
 
 
@@ -37,7 +21,7 @@ function dogify() {
     
     downvotedAnswers.map((node) => {
         // Make get request to dog api! 
-        fetch('https://dog.ceo/api/breeds/image/random')
+        fetch('https://dog.ceo/api/breed/pembroke/images/random')
             .then((response) => response.json())
             .then((JSONData) => {
                 node.style.backgroundColor = '';
@@ -46,18 +30,8 @@ function dogify() {
                 let dog = document.createElement('img');
                 dog.src = `${JSONData.message}`
                 node.appendChild(dog)
-                // node.style.backgroundImage = `url(${JSONData.message})`;
-                // node.style.backgroundSize = `100% auto`;
-                // node.style.backgroundRepeat = 'no-repeat';
-                
-                console.log(JSONData.message)
             })
             .catch(error => console.log(error))
-            
-        // node.innerHTML = '';
-        // let corgi = document.createElement('img');
-        // corgi.src = 'https://placecorgi.com/700/900'
-        // node.appendChild(corgi);
         
     });
 }

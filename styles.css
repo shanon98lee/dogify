@@ -1,7 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
 .popupContainer {
     width: 200px; 
     height: 400px;
     display: flex;
     flex-direction: column;
     align-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
+
+body {
+  font-family: sans-serif;
+  background-color: "white";
+  border: 5px solid #FC5185;
+}
+
+h2 {
+  color: #364F6B;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h4 {
+  color: #364F6B;
+  text-align: center;
+  font-size: 14px;
+  margin: 10px;
+}
+
+#dogButton {
+  border: 1px solid #364F6B;
+  border-radius: 10px;
+  height: 50px;
+  width: 100px;
+  background-color: #3FC1C9;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* #364F6B Dark Green*/
+/* #3FC1C9 Light aqua*/
+/* #F5F5F5 Gray*/
+/* #FC5185 Weird pink*/

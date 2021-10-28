@@ -1,11 +1,4 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//   const btn = document.getElementById('dogButton');
-//   btn.addEventListener('click', dogify)
-// })
-
-// chrome.runtime.sendMessage({key: 'popupInit'}, function (response) {
-//   ;
-//  });
+// Send message to main js
 const dogifyButton = document.getElementById('dogButton');
 dogifyButton.addEventListener('click', () => {
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
